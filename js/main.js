@@ -1,7 +1,7 @@
 "use strict";
 
 $(document).ready(async () => {
-    const data = await fetch('/data');
+    const data = await fetch('https://portfolio-nikhil-gaur.onrender.com/data');
     const areaCode = await data.json();
     for (let i = 0; i < areaCode.length; i++) {
         const str2 = `
